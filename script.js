@@ -55,6 +55,86 @@ const projects = [
             './assets/projects/rfid-door-lock/image-1.jpg',
             './assets/projects/rfid-door-lock/image-2.jpg'
         ]
+    },
+     {
+        id: 'kosinaja',
+        number: '04',
+        title: 'KOSINAJA',
+        category: 'Social Media Design · Content Creation',
+        shortHeading: 'Social Media Designer & Content Creator (INATECHNO · @kosinaja.id)',
+        description: 'Mengelola pembuatan konten visual untuk kebutuhan promosi layanan penitipan barang KOSINAJA, termasuk desain feed Instagram, materi promosi digital, serta editing video untuk mendukung publikasi konten pada media sosial.',
+        tech: ['Social Media Design', 'Graphic Design', 'Content Creation'],
+        cover: './assets/projects/desain.kosinaja/image.png',
+        images: [
+            './assets/projects/desain.kosinaja/image.png',
+            './assets/projects/desain.kosinaja/848041761_1076501695195914_7815771740181598854_n.jpg',
+            './assets/projects/desain.kosinaja/848071892_2629120430853006_3520508092921375270_n.jpg',
+            './assets/projects/desain.kosinaja/848696017_1160637132960014_8217107424462516338_n.jpg',
+            './assets/projects/desain.kosinaja/849330795_2037622116949969_7290652962413493877_n.jpg',
+            './assets/projects/desain.kosinaja/849726034_1102380449432366_8375624879581816847_n.jpg',
+            './assets/projects/desain.kosinaja/849890117_1104841262274808_1188765360316918888_n.jpg',
+            './assets/projects/desain.kosinaja/850495231_1114857137754170_2063138954571195291_n.jpg',
+            './assets/projects/desain.kosinaja/850698377_961240193199201_3352887711474883350_n.jpg',
+            './assets/projects/desain.kosinaja/850926209_2583747032143399_461422811481674987_n.jpg'
+        ]
+    },
+    {
+        id: 'feed-hari-peringatan-hmj',
+        number: '05',
+        title: 'Desain Feed Hari Peringatan HMJ Tekinfo',
+        category: 'Graphic Design · Social Media Design',
+        shortHeading: 'Social Media Feed Designer — HMJ TEKINFO',
+        description: 'Membuat desain konten feed Instagram untuk memperingati hari-hari nasional dan momen penting sebagai bagian dari publikasi media sosial @hmjtekinfopnp.',
+        tech: ['Graphic Design', 'Instagram Feed'],
+        cover: './assets/projects/feed1/847997509_1439956768260416_6998615286397124039_n.jpg',
+        images: [
+            './assets/projects/feed1/847997509_1439956768260416_6998615286397124039_n.jpg',
+            './assets/projects/feed1/847938513_971228336043428_1744005392311063636_n.jpg',
+            './assets/projects/feed1/851708923_1459892222912128_5347083625015436639_n.jpg'
+        ]
+    },
+    {
+        id: 'volunteer-siti-2024',
+        number: '06',
+        title: 'Desain Twibbon & Poster Volunteer SITI 2024',
+        category: 'Poster Design · Twibbon Design',
+        shortHeading: 'Volunteer Recruitment Design - SITI 2024 (SITI 2024)',
+        description: 'Membuat desain publikasi untuk kegiatan rekrutmen volunteer SITI 2024, meliputi poster informasi dan twibbon untuk partisipasi calon volunteer.',
+        tech: ['Poster Design', 'Twibbon Design'],
+        cover: './assets/projects/volunteerTI/851708923_1459892222912128_5347083625015436639_n.jpg',
+        images: [
+            './assets/projects/volunteerTI/851708923_1459892222912128_5347083625015436639_n.jpg',
+            './assets/projects/volunteerTI/848438320_1471193254869227_8588934282909437136_n.jpg'
+        ]
+    },
+    {
+        id: 'twibbon-pkkmb-ti-2024',
+        number: '07',
+        title: 'Desain Twibbon PKKMB TI 2024',
+        category: 'Twibbon Design · Event Branding',
+        shortHeading: 'PKKMB Teknologi informasi 2024 (PKKMB TI 2024)',
+        description: 'Merancang twibbon untuk kegiatan Pengenalan Kehidupan Kampus bagi Mahasiswa Baru (PKKMB) Teknologi informasi tahun 2024.',
+        tech: ['Twibbon Design', 'Graphic Design'],
+        cover: './assets/projects/twibbonPKKMB/851425460_2037720096930924_4614590258809133213_n.jpg',
+        images: [
+            './assets/projects/twibbonPKKMB/851425460_2037720096930924_4614590258809133213_n.jpg',
+            './assets/projects/twibbonPKKMB/848185924_2410623019345875_5619431733268819142_n.jpg'
+        ]
+    },
+    {
+        id: 'kepengurusan-hima-2024',
+        number: '08',
+        title: 'Desain Kepengurusan HIMA 2024',
+        category: 'Organizational Design',
+        shortHeading: 'HIMA Management Board Design 2024 (HMJ TEKINFO)',
+        description: 'Membuat desain publikasi struktur kepengurusan HIMA tahun 2024 yang menampilkan identitas pengurus dan susunan organisasi dalam format visual yang terstruktur.',
+        tech: ['Organizational Design', 'Layout Design', 'Digital Publication'],
+        cover: './assets/projects/KepengurusanHMJ/848468013_1438327134889150_7861470118046482385_n.jpg',
+        images: [
+            './assets/projects/KepengurusanHMJ/848468013_1438327134889150_7861470118046482385_n.jpg',
+            './assets/projects/KepengurusanHMJ/849016029_4543847739277563_5816519742338089002_n.jpg',
+            './assets/projects/KepengurusanHMJ/850871206_4553413831644873_7351133428765668114_n.jpg'
+        ]
     }
 ];
 
@@ -416,6 +496,8 @@ document.addEventListener('keydown', function (e) {
             closeLightbox();
         } else if (modalOverlay && modalOverlay.classList.contains('open')) {
             closeModal();
+        } else if (cvModalOverlay && cvModalOverlay.classList.contains('open')) {
+            closeCvModal();
         } else if (sidebar && sidebar.classList.contains('open')) {
             closeSidebar();
         }
@@ -434,6 +516,46 @@ document.addEventListener('keydown', function (e) {
         }
     }
 });
+
+/* --- CV Preview Modal Logic --- */
+const btnPreviewCv = document.getElementById('btn-preview-cv');
+const cvModalOverlay = document.getElementById('cv-modal-overlay');
+const cvModalClose = document.getElementById('cv-modal-close');
+
+function openCvModal() {
+    if (cvModalOverlay) {
+        cvModalOverlay.classList.add('open');
+        document.body.classList.add('modal-open');
+        if (btnPreviewCv) btnPreviewCv.setAttribute('aria-expanded', 'true');
+    }
+}
+
+function closeCvModal() {
+    if (cvModalOverlay) {
+        cvModalOverlay.classList.remove('open');
+        document.body.classList.remove('modal-open');
+        if (btnPreviewCv) btnPreviewCv.setAttribute('aria-expanded', 'false');
+    }
+}
+
+if (btnPreviewCv) {
+    btnPreviewCv.addEventListener('click', function (e) {
+        e.preventDefault();
+        openCvModal();
+    });
+}
+
+if (cvModalClose) {
+    cvModalClose.addEventListener('click', closeCvModal);
+}
+
+if (cvModalOverlay) {
+    cvModalOverlay.addEventListener('click', function (e) {
+        if (e.target === cvModalOverlay) {
+            closeCvModal();
+        }
+    });
+}
 
 /* --- Update Years --- */
 const currentYear = new Date().getFullYear();

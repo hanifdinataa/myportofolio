@@ -8,7 +8,10 @@
     <meta property="og:title" content="Portofolio - Hanif Dinata">
     <meta property="og:description" content="Portofolio Hanif Dinata, A.Md.T - Software Developer & Lulusan D3 Teknik Komputer.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/images/Beige Design Studio Instagram Post.png">
     <title>Portofolio - Hanif Dinata</title>
+    <link rel="icon" type="image/png" href="./assets/images/Beige Design Studio Instagram Post.png">
+    <link rel="apple-touch-icon" href="./assets/images/Beige Design Studio Instagram Post.png">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -23,7 +26,7 @@
 
     <!-- Mobile Top Header Bar -->
     <header class="mobile-header" id="mobile-header">
-        <a href="#hero" class="mobile-logo">HANIF DINATA</a>
+        <a href="#hero" class="mobile-logo">PORTOFOLIO</a>
         <div class="mobile-header-actions">
             <button id="mobile-theme-btn" class="theme-btn theme-btn-sm" aria-label="Ganti mode tampilan">
                 <span class="theme-icon sun-icon">☀️</span>
@@ -45,7 +48,7 @@
         <div class="sidebar-inner">
             <div class="sidebar-header">
                 <a href="#hero" class="sidebar-logo">HANIF DINATA, A.MD.T</a>
-                <p class="sidebar-tagline">Teknik Komputer</p>
+                <!-- <p class="sidebar-tagline">Teknik Komputer</p> -->
             </div>
 
             <nav class="sidebar-nav">
@@ -83,12 +86,20 @@
             <div class="container">
                 <div class="hero-content">
                     <span class="hero-badge">Web Development &middot; Backend Systems &middot; Mobile Applications</span>
-                    <h1 class="hero-title">HANIF DINATA, A.Md.T</h1>
-                    <p class="hero-subtitle">Lulusan D3 Teknik Komputer | software developer</p>
+                    <h1 class="hero-title">HANIF DINATA, A.MD.T</h1>
+                    <p class="hero-subtitle">Lulusan D3 Teknik Komputer</p>
                     <p class="hero-desc">Saya mengembangkan aplikasi web dan mobile, membangun REST API, mengelola database, serta melakukan deployment dan konfigurasi server untuk mendukung sistem yang berjalan secara optimal.</p>
                     <div class="hero-actions">
                         <a href="#portfolio" class="btn btn-primary">Lihat Portofolio</a>
-                        <a href="#" class="btn btn-outline">Unduh CV</a>
+                        <button type="button" class="btn btn-outline" id="btn-preview-cv" aria-haspopup="dialog" aria-expanded="false">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px; vertical-align:text-bottom;">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>Lihat CV
+                        </button>
                         <a href="https://www.linkedin.com/in/hanif-dinata-536371326/" class="btn btn-accent" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </div>
                 </div>
@@ -144,11 +155,11 @@
                     <div class="edu-info">
                         <span class="edu-badge">POLITEKNIK NEGERI PADANG</span>
                         <h3 class="edu-institution">Politeknik Negeri Padang</h3>
-                        <p class="edu-program">D3 Teknik Komputer — Jurusan Teknologi Informasi</p>
+                        <p class="edu-program">D3 Teknik Komputer - Jurusan Teknologi Informasi</p>
                         <span class="edu-year">2023 – 2026</span>
                         <div class="edu-details">
                             <span class="edu-gpa">IPK 3,58 / 4,00</span>
-                            <span class="edu-honor">Lulusan dengan Pujian</span>
+                            <span class="edu-honor">Lulusan Pujian</span>
                         </div>
                     </div>
                 </div>
@@ -406,6 +417,7 @@
                             <span class="tag">TensorFlow</span>
                             <span class="tag">CNN</span>
                             <span class="tag">Random Forest</span>
+                            <span class="tag">OCR</span>
                         </div>
                     </div>
 
@@ -469,6 +481,14 @@
                 </div>
                 <div class="contact-content">
                     <div class="contact-links">
+                        <a href="https://wa.me/6285959082037" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                            </span>
+                            <span class="contact-text">0859-5908-2037 (WhatsApp)</span>
+                        </a>
                         <a href="mailto:hanifdinata24@gmail.com" class="contact-link">
                             <span class="contact-icon">✉</span>
                             <span class="contact-text">hanifdinata24@gmail.com</span>
@@ -482,7 +502,7 @@
                             <span class="contact-text">GitHub</span>
                         </a>
                     </div>
-                    <a href="mailto:hanifdinata24@gmail.com" class="btn btn-primary btn-block">Hubungi Saya</a>
+                    <a href="https://wa.me/6285959082037" class="btn btn-primary btn-block" target="_blank" rel="noopener noreferrer">Hubungi Saya via WhatsApp</a>
                 </div>
             </div>
         </section>
@@ -495,6 +515,7 @@
                 <p class="footer-name">HANIF DINATA, A.MD.T</p>
                 <p class="footer-copy">&copy; <span id="footer-year">2026</span> Hanif Dinata. All rights reserved.</p>
                 <div class="footer-links">
+                    <a href="https://wa.me/6285959082037" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                     <a href="https://github.com/hanifdinataa" target="_blank" rel="noopener noreferrer">GitHub</a>
                     <a href="https://www.linkedin.com/in/hanif-dinata-536371326/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
@@ -538,6 +559,47 @@
         <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Gambar sebelumnya">‹</button>
         <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Gambar berikutnya">›</button>
         <img src="" alt="" class="lightbox-img" id="lightbox-img">
+    </div>
+
+    <!-- CV Preview Modal -->
+    <div class="modal-overlay" id="cv-modal-overlay" role="dialog" aria-modal="true" aria-label="Preview Curriculum Vitae">
+        <div class="modal cv-modal">
+            <div class="cv-modal-header">
+                <div class="cv-modal-title-group">
+                    <span class="cv-modal-badge">DOKUMEN RESMI</span>
+                    <h3 class="cv-modal-title">Curriculum Vitae — Hanif Dinata, A.Md.T</h3>
+                </div>
+                <div class="cv-modal-actions">
+                    <a href="./assets/CV/CV Hanif Dinata (1).pdf" download="CV Hanif Dinata.pdf" class="btn btn-primary btn-sm cv-btn-action">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Unduh PDF</span>
+                    </a>
+                    <a href="./assets/CV/CV Hanif Dinata (1).pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cv-btn-action" title="Buka di tab baru">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        <span>Tab Baru</span>
+                    </a>
+                    <button class="cv-modal-close-btn" id="cv-modal-close" aria-label="Tutup preview CV">✕</button>
+                </div>
+            </div>
+            <div class="cv-modal-body">
+                <iframe src="./assets/CV/CV Hanif Dinata (1).pdf#toolbar=1" class="cv-iframe" id="cv-iframe" title="Preview Curriculum Vitae Hanif Dinata"></iframe>
+                <div class="cv-mobile-fallback">
+                    <p>Preview PDF tidak tampil di perangkat Anda? Anda dapat membuka atau mengunduh langsung:</p>
+                    <div class="cv-fallback-btns">
+                        <a href="./assets/CV/CV Hanif Dinata (1).pdf" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">Buka PDF di Tab Baru →</a>
+                        <a href="./assets/CV/CV Hanif Dinata (1).pdf" download="CV Hanif Dinata.pdf" class="btn btn-primary btn-sm">Unduh CV (.pdf) ↓</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="./script.js"></script>
