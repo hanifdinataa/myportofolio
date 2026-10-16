@@ -59,6 +59,7 @@
                     <li><a href="#education" class="nav-link"><span>Pendidikan</span></a></li>
                     <li><a href="#experience" class="nav-link"><span>Pengalaman</span></a></li>
                     <li><a href="#organization" class="nav-link"><span>Organisasi</span></a></li>
+                    <li><a href="#credentials" class="nav-link"><span>Credentials</span></a></li>
                     <li><a href="#tech" class="nav-link"><span>Teknologi</span></a></li>
                     <li><a href="#github-section" class="nav-link"><span>GitHub</span></a></li>
                     <li><a href="#contact" class="nav-link"><span>Kontak</span></a></li>
@@ -359,8 +360,39 @@
             </div>
         </section>
 
-        <!-- 7. Teknologi Section (Sesuai Kategori Permintaan) -->
-        <section class="section section-alt" id="tech">
+        <!-- 7. Credentials / Sertifikat Section -->
+        <section class="section section-alt" id="credentials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Credentials</h2>
+                    <p class="section-desc">Sertifikasi profesional, bukti kompetensi, pelatihan, dan pencapaian akademik yang telah saya peroleh.</p>
+                </div>
+
+                <!-- Filter Kategori Tabs (Sesuai Penerbit / Organisasi) -->
+                <div class="cert-filters" role="tablist" aria-label="Filter Sertifikat">
+                    <button type="button" class="cert-filter-btn active" data-filter="all">All Certificates</button>
+                    <button type="button" class="cert-filter-btn" data-filter="oracle">Oracle</button>
+                    <button type="button" class="cert-filter-btn" data-filter="redhat">Red Hat</button>
+                    <button type="button" class="cert-filter-btn" data-filter="sololearn">Sololearn</button>
+                    <button type="button" class="cert-filter-btn" data-filter="dicoding">Dicoding</button>
+                    <button type="button" class="cert-filter-btn" data-filter="hackerrank">HackerRank</button>
+                    <button type="button" class="cert-filter-btn" data-filter="cisco">Cisco</button>
+                    <button type="button" class="cert-filter-btn" data-filter="bnsp">BNSP / DIGIMIND</button>
+                    <button type="button" class="cert-filter-btn" data-filter="inatechno">INATECHNO</button>
+                    <button type="button" class="cert-filter-btn" data-filter="kominfo">Kominfo DTS</button>
+                    <button type="button" class="cert-filter-btn" data-filter="organization">HMJ TI &amp; PNP</button>
+                    <button type="button" class="cert-filter-btn" data-filter="internship">Internship</button>
+                </div>
+
+                <!-- Certificates Grid -->
+                <div class="cert-grid" id="cert-grid">
+                    <!-- Populated dynamically by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Teknologi Section (Sesuai Kategori Permintaan) -->
+        <section class="section" id="tech">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Teknologi yang Saya Gunakan</h2>
@@ -597,6 +629,44 @@
                         <a href="./assets/CV/CV Hanif Dinata (1).pdf" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">Buka PDF di Tab Baru →</a>
                         <a href="./assets/CV/CV Hanif Dinata (1).pdf" download="CV Hanif Dinata.pdf" class="btn btn-primary btn-sm">Unduh CV (.pdf) ↓</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Preview Modal (Mirrors CV Modal Style) -->
+    <div class="modal-overlay" id="cert-modal-overlay" role="dialog" aria-modal="true" aria-label="Preview Sertifikat">
+        <div class="modal cert-modal">
+            <div class="cert-modal-header">
+                <div class="cert-modal-title-group">
+                    <span class="cert-modal-badge" id="cert-modal-badge">SERTIFIKAT RESMI</span>
+                    <h3 class="cert-modal-title" id="cert-modal-title">Pratinjau Sertifikat</h3>
+                </div>
+                <div class="cert-modal-actions">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm cert-btn-action" id="cert-modal-verify-btn" style="display: none;">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        <span>Kredensial</span>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn-action" id="cert-modal-open-btn">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <span>Buka Gambar Penuh</span>
+                    </a>
+                    <button type="button" class="cert-modal-close-btn" id="cert-modal-close" aria-label="Tutup preview sertifikat">✕</button>
+                </div>
+            </div>
+            <div class="cert-modal-body">
+                <div class="cert-modal-preview-wrap">
+                    <img src="./assets/certificates/placeholder.svg" alt="Preview Sertifikat" class="cert-modal-img" id="cert-modal-img">
+                </div>
+                <div class="cert-modal-footer">
+                    <p class="cert-modal-desc" id="cert-modal-desc"></p>
                 </div>
             </div>
         </div>
