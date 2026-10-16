@@ -949,7 +949,10 @@ function renderCertificates(activeFilter) {
     filtered.forEach(function (cert) {
         html += '<article class="cert-card" data-category="' + cert.category + '">';
         html += '  <div class="cert-image-wrap" data-cert-id="' + cert.id + '" title="Klik untuk melihat pratinjau sertifikat">';
-        html += '    <img src="' + cert.image + '" alt="' + cert.title + '" loading="lazy" class="cert-preview-img" onerror="this.onerror=null;this.src=\'' + cert.fallback + '\'">';
+        html += '    <picture>';
+        html += '      <source srcset="' + cert.image.replace('.png', '.webp') + '" type="image/webp">';
+        html += '      <img src="' + cert.image + '" alt="' + cert.title + '" loading="lazy" class="cert-preview-img" onerror="this.onerror=null;this.src=\'' + cert.fallback + '\'">';
+        html += '    </picture>';
         html += '    <span class="cert-badge">' + cert.categoryLabel + '</span>';
         html += '  </div>';
         html += '  <div class="cert-body">';
@@ -987,7 +990,15 @@ function openCertModal(certId) {
     if (certModalDesc) certModalDesc.textContent = cert.description;
 
     if (certModalImg) {
-        certModalImg.src = cert.image;
+        var webpSrc = cert.image.replace('.png', '.webp');
+        var testImg = new Image();
+        testImg.onload = function () {
+            certModalImg.src = webpSrc;
+        };
+        testImg.onerror = function () {
+            certModalImg.src = cert.image;
+        };
+        testImg.src = webpSrc;
         certModalImg.alt = cert.title;
         certModalImg.onerror = function () {
             this.onerror = null;
