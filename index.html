@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Hanif Dinata, A.Md.T - Lulusan D3 Teknik Komputer, Web Development, Backend Systems, Mobile Applications, dan Internet of Things.">
+    <meta name="theme-color" content="#FFE600">
+    <meta property="og:title" content="Portofolio - Hanif Dinata">
+    <meta property="og:description" content="Portofolio Hanif Dinata, A.Md.T - Software Developer & Lulusan D3 Teknik Komputer.">
+    <meta property="og:type" content="website">
+    <title>Portofolio - Hanif Dinata</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Theme Toggle Floating Button (Desktop) -->
+    <div class="theme-toggle-desktop">
+        <button id="theme-toggle-btn" class="theme-btn" aria-label="Ganti mode tampilan">
+            <span class="theme-icon sun-icon">☀️</span>
+            <span class="theme-icon moon-icon">🌙</span>
+            <span class="theme-text">Mode</span>
+        </button>
+    </div>
+
+    <!-- Mobile Top Header Bar -->
+    <header class="mobile-header" id="mobile-header">
+        <a href="#hero" class="mobile-logo">HANIF DINATA</a>
+        <div class="mobile-header-actions">
+            <button id="mobile-theme-btn" class="theme-btn theme-btn-sm" aria-label="Ganti mode tampilan">
+                <span class="theme-icon sun-icon">☀️</span>
+                <span class="theme-icon moon-icon">🌙</span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Buka navigasi menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Backdrop Overlay for Mobile Drawer -->
+    <div class="sidebar-backdrop" id="sidebar-backdrop" aria-hidden="true"></div>
+
+    <!-- Fixed Left Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar" aria-label="Navigasi Utama">
+        <div class="sidebar-inner">
+            <div class="sidebar-header">
+                <a href="#hero" class="sidebar-logo">HANIF DINATA, A.MD.T</a>
+                <p class="sidebar-tagline">Teknik Komputer</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero" class="nav-link active"><span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link"><span>Tentang Saya</span></a></li>
+                    <li><a href="#portfolio" class="nav-link"><span>Portofolio</span></a></li>
+                    <li><a href="#education" class="nav-link"><span>Pendidikan</span></a></li>
+                    <li><a href="#experience" class="nav-link"><span>Pengalaman</span></a></li>
+                    <li><a href="#organization" class="nav-link"><span>Organisasi</span></a></li>
+                    <li><a href="#tech" class="nav-link"><span>Teknologi</span></a></li>
+                    <li><a href="#github-section" class="nav-link"><span>GitHub</span></a></li>
+                    <li><a href="#contact" class="nav-link"><span>Kontak</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="sidebar-socials">
+                    <a href="https://github.com/hanifdinataa" class="sidebar-social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <span class="social-divider">&middot;</span>
+                    <a href="https://www.linkedin.com/in/hanif-dinata-536371326/" class="sidebar-social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <span class="social-divider">&middot;</span>
+                    <a href="mailto:hanifdinata24@gmail.com" class="sidebar-social-link">Email</a>
+                </div>
+                <p class="sidebar-copy">&copy; <span id="sidebar-year">2026</span> Hanif Dinata</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper" id="main-wrapper">
+    <main>
+        <!-- 1. Home / Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge">Web Development &middot; Backend Systems &middot; Mobile Applications</span>
+                    <h1 class="hero-title">HANIF DINATA, A.Md.T</h1>
+                    <p class="hero-subtitle">Lulusan D3 Teknik Komputer | software developer</p>
+                    <p class="hero-desc">Saya mengembangkan aplikasi web dan mobile, membangun REST API, mengelola database, serta melakukan deployment dan konfigurasi server untuk mendukung sistem yang berjalan secara optimal.</p>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn btn-primary">Lihat Portofolio</a>
+                        <a href="#" class="btn btn-outline">Unduh CV</a>
+                        <a href="https://www.linkedin.com/in/hanif-dinata-536371326/" class="btn btn-accent" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-pattern-bg" aria-hidden="true"></div>
+        </section>
+
+        <!-- 2. Tentang Saya (Nomor 2, di bawah Home) -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Tentang Saya</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="./assets/images/Beige Design Studio Instagram Post.png" alt="Foto Hanif Dinata" width="280" height="280" onerror="this.parentElement.classList.add('img-error')">
+                    </div>
+                    <div class="about-text">
+                        <p class="about-highlight">Lulusan D3 Teknik Komputer, Jurusan Teknologi Informasi, Politeknik Negeri Padang dengan <strong>IPK 3,58</strong> dan predikat <strong>Lulusan dengan Pujian</strong>.</p>
+                        <p>Saya memiliki ketertarikan mendalam pada pengembangan perangkat lunak, Internet of Things, embedded system, serta pengembangan aplikasi web dan mobile modern.</p>
+                        <p>Selama masa studi, saya aktif mengembangkan beragam proyek yang mengintegrasikan perangkat keras dan perangkat lunak, didukung oleh pengalaman nyata melalui kegiatan internship profesional dan organisasi kemahasiswaan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Portofolio Saya -->
+        <section class="section section-alt" id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Portofolio Saya</h2>
+                    <p class="section-desc">Beberapa proyek yang saya kembangkan selama perkuliahan, internship, dan pengembangan sistem berbasis teknologi.</p>
+                </div>
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Rendered by JavaScript: Single cover image per project on main page -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Pendidikan (Nomor 4, di bawah Portofolio) -->
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Pendidikan</h2>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-logo-wrapper">
+                        <!-- PNP Crest Icon / Logo -->
+                        <div class="pnp-crest" aria-label="Logo Politeknik Negeri Padang">
+                            <img src="./assets/images/PNP.png" alt="Logo Politeknik Negeri Padang" width="64" height="64">
+                        </div>
+                    </div>
+                    <div class="edu-info">
+                        <span class="edu-badge">POLITEKNIK NEGERI PADANG</span>
+                        <h3 class="edu-institution">Politeknik Negeri Padang</h3>
+                        <p class="edu-program">D3 Teknik Komputer — Jurusan Teknologi Informasi</p>
+                        <span class="edu-year">2023 – 2026</span>
+                        <div class="edu-details">
+                            <span class="edu-gpa">IPK 3,58 / 4,00</span>
+                            <span class="edu-honor">Lulusan dengan Pujian</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Pengalaman -->
+        <section class="section section-alt" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Pengalaman</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Quality Assurance Tester Intership</h3>
+                            <p class="timeline-company">PT Neuronworks Indonesia</p>
+                            <span class="timeline-date">Agustus 2025 – September 2025</span>
+                            <p class="timeline-desc">Melakukan pengujian manual dan otomatis menggunakan Playwright di bawah arahan tim. Menjalankan skrip otomatisasi, menggunakan Postman untuk pengujian API, serta melaporkan bug melalui GitLab guna mendukung kualitas perangkat lunak.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Playwright</span>
+                                <span class="tag">Cypress</span>
+                                <span class="tag">Manual Testing</span>
+                                <span class="tag">Automated Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Backend Developer Internship</h3>
+                            <p class="timeline-company">IMEJ Consultant</p>
+                            <span class="timeline-date">November 2025 – Desember 2025</span>
+                            <p class="timeline-desc">Saya mengawali peran sebagai Backend Developer Intern dengan fokus pada pengembangan aplikasi menggunakan Laravel. Saya menangani perbaikan bug serta peningkatan performa dan struktur sistem.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Debugging</span>
+                                <span class="tag">Bug Fixing</span>
+                                <span class="tag">Laravel</span>
+                                <span class="tag">Server-Side Code</span>
+                                <span class="tag">WinSCP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Feed Designer</h3>
+                            <p class="timeline-company">INATECHNO @kosinaja.id</p>
+                            <span class="timeline-date">Juli 2025 – Oktober 2025</span>
+                            <p class="timeline-desc">Mengelola konten promosi layanan penitipan barang untuk akun Instagram @kosinaja.id.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Social Media Design</span>
+                                <span class="tag">Content Creation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Petugas Operasional Depot Air Minum</h3>
+                            <p class="timeline-company">Depot Air Minum Sukorejo</p>
+                            <span class="timeline-date">Juni 2020 – Februari 2026</span>
+                            <p class="timeline-desc">Bertanggung jawab atas proses pencucian dan pengisian ulang galon, pemeriksaan kebersihan galon, serta pengantaran pesanan kepada pelanggan. Memastikan kebersihan produk, ketepatan pesanan, dan pelayanan pelanggan berjalan dengan baik.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Operasional</span>
+                                <span class="tag">Pelayanan Pelanggan</span>
+                                <span class="tag">Pengiriman Barang</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Organisasi & Kegiatan (Sesuai Gambar LinkedIn) -->
+        <section class="section" id="organization">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Organisasi &amp; Kegiatan</h2>
+                </div>
+
+                <div class="org-container">
+                    <!-- Main Org Header -->
+                    <div class="org-main-header">
+                        <div class="org-main-logo">
+                            <img src="./assets/images/LOGOHMJ.png" alt="Logo HMJ TI PNP" onerror="this.parentElement.innerHTML='<div class=\'org-logo-fallback\'>HMJ-TI</div>'">
+                        </div>
+                        <div class="org-main-info">
+                            <h3 class="org-main-title">Himpunan Mahasiswa Jurusan Teknologi Informasi PNP</h3>
+                            <span class="org-main-tenure">Februari 2024 - Februari 2026</span>
+                        </div>
+                    </div>
+
+                    <!-- Roles List (LinkedIn Style) -->
+                    <div class="org-roles-tree">
+                        <!-- Role 1 -->
+                        <div class="org-role-item">
+                            <div class="org-role-bullet"></div>
+                            <div class="org-role-content">
+                                <h4 class="org-role-title">Snapgram Designer</h4>
+                                <p class="org-role-meta">Feb 2024 - Des 2024</p>
+                                <p class="org-role-location">Politeknik Negeri Padang &middot; Di lokasi</p>
+                                <p class="org-role-desc">Play a major role in the management of HMJ-TEKINFO Snapgram content, especially the design of national and international day commemorations.</p>
+                                <div class="org-role-skills">
+                                    <span class="skill-label">Keahlian:</span> Canva, Video Editing, Design, Social Media Management
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Role 2 -->
+                        <div class="org-role-item">
+                            <div class="org-role-bullet"></div>
+                            <div class="org-role-content">
+                                <h4 class="org-role-title">Video Production &amp; Editing Coordinator | PKKMB 2024</h4>
+                                <p class="org-role-meta">Jul 2024</p>
+                                <p class="org-role-desc">Lead the production and editing of PKKMB 2024 introduction video, including concept planning, video shooting, and full video editing for publication</p>
+                                
+                                <!-- <div class="org-media-card">
+                                    <div class="org-media-thumb">
+                                        <img src="./assets/creative/hmj-ti/image-3.jpg" alt="Video PKKMB 2024" onerror="this.style.display='none'">
+                                        <span class="org-media-icon">↗</span>
+                                    </div>
+                                    <div class="org-media-info">
+                                        <p class="org-media-text">Introduction video of HMJ Tekinfo 2024/2025 showcasing its profile and activities.</p>
+                                    </div>
+                                </div> -->
+
+                                <div class="org-role-skills">
+                                    <span class="skill-label">Keahlian:</span> CapCut
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Role 3 -->
+                        <div class="org-role-item">
+                            <div class="org-role-bullet"></div>
+                            <div class="org-role-content">
+                                <h4 class="org-role-title">Creating the PKKMB 2024 Twibbon</h4>
+                                <p class="org-role-meta">Jul 2024</p>
+                                <p class="org-role-desc">Designed the PKKMB 2024 Twibbon for IT freshmen's campus welcome.</p>
+
+                                <!-- <div class="org-media-card">
+                                    <div class="org-media-thumb">
+                                        <img src="./assets/creative/hmj-ti/image-4.jpg" alt="Twibbon PKKMB 2024" onerror="this.style.display='none'">
+                                        <span class="org-media-icon">↗</span>
+                                    </div>
+                                    <div class="org-media-info">
+                                        <p class="org-media-text">Twibbon PKKMB 2024</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <!-- Role 4 -->
+                        <div class="org-role-item">
+                            <div class="org-role-bullet"></div>
+                            <div class="org-role-content">
+                                <h4 class="org-role-title">Graphic Designer - Organizational Feed</h4>
+                                <p class="org-role-meta">Jun 2024 - Jul 2024</p>
+                                <p class="org-role-desc">Create a feed design to introduce the 2024 management of the organization</p>
+
+                                <!-- <div class="org-media-card">
+                                    <div class="org-media-thumb">
+                                        <img src="./assets/creative/hmj-ti/image-2.jpg" alt="Feed Kepengurusan HMJTEKINFO" onerror="this.style.display='none'">
+                                        <span class="org-media-icon">↗</span>
+                                    </div>
+                                    <div class="org-media-info">
+                                        <p class="org-media-text">Feed Kepengurusan HMJTEKINFO 2024/2025</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <!-- Role 5 -->
+                        <div class="org-role-item">
+                            <div class="org-role-bullet"></div>
+                            <div class="org-role-content">
+                                <h4 class="org-role-title">Coordinator of Publication and Documentation</h4>
+                                <p class="org-role-meta">Apr 2024</p>
+                                <div class="org-role-desc">
+                                    <p>Coordination of publication &amp; documentation team for:</p>
+                                    <ul class="org-bullet-list">
+                                        <li>PKM Event 2024,</li>
+                                        <li>Tekinfo Berbagi Takjil 2024, and</li>
+                                        <li>Webinar NgabuburIT Bersama 2024.</li>
+                                    </ul>
+                                    <p>including content creation, social media management, and event documentation</p>
+                                </div>
+                                <div class="org-role-skills">
+                                    <span class="skill-label">Keahlian:</span> Teamwork
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Teknologi Section (Sesuai Kategori Permintaan) -->
+        <section class="section section-alt" id="tech">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Teknologi yang Saya Gunakan</h2>
+                </div>
+                <div class="tech-grid">
+                    <!-- Development -->
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">Development</h3>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">Mobile</h3>
+                        <div class="tech-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                        </div>
+                    </div>
+
+                    <!-- Internet of Things -->
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">Internet of Things</h3>
+                        <div class="tech-tags">
+                            <span class="tag">ESP32</span>
+                            <span class="tag">Arduino IDE</span>
+                            <span class="tag">MQTT</span>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">Database</h3>
+                        <div class="tech-tags">
+                            <span class="tag">MySQL phpMyAdmin</span>
+                            <span class="tag">HeidiSQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">Machine Learning</h3>
+                        <div class="tech-tags">
+                            <span class="tag">YOLO</span>
+                            <span class="tag">XGBoost</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">CNN</span>
+                            <span class="tag">Random Forest</span>
+                        </div>
+                    </div>
+
+                    <!-- DevOps -->
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">DevOps</h3>
+                        <div class="tech-tags">
+                            <span class="tag">AWS EC2</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">GitHub</span>
+                        </div>
+                    </div>
+
+                    <!-- Testing -->
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">Testing</h3>
+                        <div class="tech-tags">
+                            <span class="tag">Playwright</span>
+                            <span class="tag">Cypress</span>
+                            <span class="tag">Manual Testing</span>
+                            <span class="tag">Automated Testing</span>
+                        </div>
+                    </div>
+
+                    <!-- Creative -->
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">Creative</h3>
+                        <div class="tech-tags">
+                            <span class="tag">Canva</span>
+                            <span class="tag">CapCut</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. GitHub Section -->
+        <section class="section" id="github-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">GitHub</h2>
+                    <p class="section-desc">Lihat beberapa proyek dan repositori kode yang saya kembangkan.</p>
+                </div>
+                <div class="github-card">
+                    <div class="github-card-left">
+                        <p class="github-name">Hanif Dinata</p>
+                        <p class="github-sub">@hanifdinataa</p>
+                    </div>
+                    <a href="https://github.com/hanifdinataa" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Lihat GitHub &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Kontak Section -->
+        <section class="section section-alt" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mari Terhubung</h2>
+                    <p class="section-desc">Terbuka untuk kesempatan kerja, kolaborasi, dan pengembangan proyek di bidang teknologi.</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-links">
+                        <a href="mailto:hanifdinata24@gmail.com" class="contact-link">
+                            <span class="contact-icon">✉</span>
+                            <span class="contact-text">hanifdinata24@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hanif-dinata-536371326/" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-icon">in</span>
+                            <span class="contact-text">LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/hanifdinataa" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-icon">&lt;/&gt;</span>
+                            <span class="contact-text">GitHub</span>
+                        </a>
+                    </div>
+                    <a href="mailto:hanifdinata24@gmail.com" class="btn btn-primary btn-block">Hubungi Saya</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-name">HANIF DINATA, A.MD.T</p>
+                <p class="footer-copy">&copy; <span id="footer-year">2026</span> Hanif Dinata. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/hanifdinataa" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/hanif-dinata-536371326/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div><!-- End main-wrapper -->
+
+    <!-- Project Detail Modal -->
+    <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-label="Detail Proyek">
+        <div class="modal">
+            <button class="modal-close" id="modal-close" aria-label="Tutup modal">✕</button>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <div class="modal-gallery-main">
+                        <img src="" alt="" id="modal-main-img" width="600" height="400">
+                    </div>
+                    <!-- Thumbnails for all project photos -->
+                    <div class="modal-gallery-thumbs" id="modal-thumbs"></div>
+                </div>
+                <div class="modal-info">
+                    <h2 class="modal-title" id="modal-title"></h2>
+                    <p class="modal-category" id="modal-category"></p>
+                    
+                    <!-- Formatted project description with bold small heading -->
+                    <div class="modal-desc-box" id="modal-desc-container">
+                        <h4 class="modal-desc-heading" id="modal-desc-heading">Ringkasan Sistem:</h4>
+                        <p class="modal-desc" id="modal-desc"></p>
+                    </div>
+
+                    <h3 class="modal-section-title">Teknologi yang Digunakan</h3>
+                    <div class="modal-tech-list" id="modal-tech"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox-overlay" id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Lihat gambar">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Tutup gambar">✕</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Gambar sebelumnya">‹</button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Gambar berikutnya">›</button>
+        <img src="" alt="" class="lightbox-img" id="lightbox-img">
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
