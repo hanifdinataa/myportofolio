@@ -1055,12 +1055,59 @@ if (certModalOverlay) {
     });
 }
 
+/* --- Development Notice Alert Modal --- */
+const devAlertOverlay = document.getElementById('dev-alert-overlay');
+const devAlertCloseBtn = document.getElementById('dev-alert-close-btn');
+const devAlertConfirmBtn = document.getElementById('dev-alert-confirm-btn');
+
+function openDevAlert() {
+    if (devAlertOverlay) {
+        devAlertOverlay.classList.add('open');
+        document.body.classList.add('modal-open');
+    }
+}
+
+function closeDevAlert() {
+    if (devAlertOverlay) {
+        devAlertOverlay.classList.remove('open');
+        const anyOtherModalOpen = document.querySelector('.modal-overlay.open:not(#dev-alert-overlay)');
+        if (!anyOtherModalOpen) {
+            document.body.classList.remove('modal-open');
+        }
+    }
+}
+
+if (devAlertCloseBtn) {
+    devAlertCloseBtn.addEventListener('click', closeDevAlert);
+}
+
+if (devAlertConfirmBtn) {
+    devAlertConfirmBtn.addEventListener('click', closeDevAlert);
+}
+
+if (devAlertOverlay) {
+    devAlertOverlay.addEventListener('click', function (e) {
+        if (e.target === devAlertOverlay) {
+            closeDevAlert();
+        }
+    });
+}
+
+// Muncul otomatis setiap kali web dibuka atau direfresh
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', openDevAlert);
+} else {
+    openDevAlert();
+}
+
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
+        closeDevAlert();
         closeCertModal();
         if (typeof closeCvModal === 'function') closeCvModal();
         if (typeof closeModal === 'function') closeModal();
         if (typeof closeLightbox === 'function') closeLightbox();
     }
 });
+
 
