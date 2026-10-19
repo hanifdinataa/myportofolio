@@ -634,104 +634,116 @@ const certificates = [
 
     /* --- Sololearn --- */
     {
-        id: 'sololearn-sql-intermediate',
-        title: 'SQL Intermediate Certificate',
-        description: 'Sertifikasi Sololearn untuk penguasaan manipulasi database relasional, join query multi-tabel, agregasi, subqueries, dan optimasi query (ID: CC-LJUVD6TK).',
-        category: 'sololearn',
-        categoryLabel: 'Sololearn',
-        image: './assets/certificates/sololearn-sql-intermediate.png',
-        fallback: './assets/certificates/sololearn.svg',
-        credentialUrl: 'https://drive.google.com/file/d/154qgkodqvVJKVfEfUePOSHAL8H1_KOiF/view?usp=drivesdk'
-    },
-    {
         id: 'sololearn-web-development',
         title: 'Web Development Certificate',
-        description: 'Sertifikasi dasar rekayasa web oleh Sololearn meliputi semantic HTML, modern styling CSS, dan interaktivitas website (ID: CC-BAECXCUA).',
+        description: '',
         category: 'sololearn',
         categoryLabel: 'Sololearn',
-        image: './assets/certificates/sololearn-web-development.png',
+        image: './assets/certificates/webdevelopment.png',
         fallback: './assets/certificates/sololearn.svg',
         credentialUrl: 'https://drive.google.com/file/d/1V_Tf9rM8RumHIwaD_TaJeV-VU6q71nRa/view?usp=drivesdk'
     },
     {
         id: 'sololearn-c',
         title: 'Introduction to C Certificate',
-        description: 'Sertifikasi pemahaman dasar bahasa C oleh Sololearn yang mencakup alokasi memori, manipulasi pointer, array, dan struct (ID: CC-A6FDEXSZ).',
+        description: '',
         category: 'sololearn',
         categoryLabel: 'Sololearn',
-        image: './assets/certificates/sololearn-c.png',
+        image: './assets/certificates/introductiontoc.png',
         fallback: './assets/certificates/sololearn.svg',
         credentialUrl: 'https://drive.google.com/file/d/1e-Oo1_6v9nTrE7YyKsgb6t51GAbVnI0F/view?usp=drivesdk'
     },
     {
         id: 'sololearn-css',
         title: 'Introduction to CSS Certificate',
-        description: 'Sertifikasi Sololearn untuk cascading style sheets, tata letak Flexbox dan Grid, tipografi web, dan styling responsif (ID: CC-FML0FPMC).',
+        description: '',
         category: 'sololearn',
         categoryLabel: 'Sololearn',
-        image: './assets/certificates/sololearn-css.png',
+        image: './assets/certificates/introductiontocss.png',
         fallback: './assets/certificates/sololearn.svg',
         credentialUrl: 'https://drive.google.com/file/d/1Znga_V6MhYouKufTVOfkZ57OqSvyEp86/view?usp=drivesdk'
     },
     {
         id: 'sololearn-html',
         title: 'Introduction to HTML Certificate',
-        description: 'Sertifikasi Sololearn untuk standar semantic HTML5, formulir web, struktur navigasi dokumen, dan aksesibilitas (ID: CC-DZVLKI9I).',
+        description: '',
         category: 'sololearn',
         categoryLabel: 'Sololearn',
-        image: './assets/certificates/sololearn-html.png',
+        image: './assets/certificates/intruductiontohtml.png',
         fallback: './assets/certificates/sololearn.svg',
         credentialUrl: 'https://drive.google.com/file/d/1S_ox6ZUWUMEjyfuPx7TjScX7hsmxoEAI/view?usp=drivesdk'
+    },
+    {
+        id: 'sololearn-sql-intermediate',
+        title: 'SQL Intermediate Certificate',
+        description: '',
+        category: 'sololearn',
+        categoryLabel: 'Sololearn',
+        image: './assets/certificates/sololearn-sql-intermediate.png',
+        fallback: './assets/certificates/sololearn.svg',
+        credentialUrl: 'https://drive.google.com/file/d/154qgkodqvVJKVfEfUePOSHAL8H1_KOiF/view?usp=drivesdk'
+    },
+
+    /* --- Google Skillshop --- */
+    {
+        id: 'google-skillshop-ai-performance-ads',
+        title: 'AI-Powered Performance Ads Certification',
+        description: '',
+        category: 'google-skillshop',
+        categoryLabel: 'Google Skillshop',
+        image: './assets/certificates/skillshop.credential.net_766949f3-42c1-4b44-8fa5-4cf2d6d828c3(Samsung Galaxy A55).png',
+        fallback: './assets/certificates/google-skillshop.svg',
+        credentialUrl: 'https://skillshop.credential.net/766949f3-42c1-4b44-8fa5-4cf2d6d828c3'
     },
 
     /* --- Dicoding Indonesia --- */
     {
         id: 'dicoding-prompt-engineering',
         title: 'Prompt Engineering untuk Software Developer',
-        description: 'Sertifikasi kompetensi Dicoding Indonesia dalam merancang prompt AI yang presisi, kontekstual, dan efektif guna akselerasi software development (ID: QLZ96L4VMZ5D).',
+        description: '',
         category: 'dicoding',
         categoryLabel: 'Dicoding',
-        image: './assets/certificates/dicoding-prompt-engineering.png',
+        image: './assets/certificates/promptengineeringuntuksoftwaredeveloper.png',
         fallback: './assets/certificates/dicoding.svg',
         credentialUrl: 'https://www.dicoding.com/certificates/QLZ96L4VMZ5D'
     },
     {
         id: 'dicoding-dasar-ai',
         title: 'Belajar Dasar AI',
-        description: 'Sertifikasi Dicoding Indonesia yang mempelajari fondasi kecerdasan buatan, machine learning, data preparation, serta etika pemanfaatan AI (ID: L4PQ287Q2ZO1).',
+        description: '',
         category: 'dicoding',
         categoryLabel: 'Dicoding',
-        image: './assets/certificates/dicoding-dasar-ai.png',
+        image: './assets/certificates/belajardasarai.png',
         fallback: './assets/certificates/dicoding.svg',
         credentialUrl: 'https://www.dicoding.com/certificates/L4PQ287Q2ZO1'
     },
     {
         id: 'dicoding-solid',
         title: 'Belajar Prinsip Pemrograman SOLID',
-        description: 'Sertifikasi Dicoding Indonesia dalam penerapan 5 prinsip arsitektur perangkat lunak SOLID untuk kode yang modular dan scalable (ID: 4EXG3YKRDZRL).',
+        description: '',
         category: 'dicoding',
         categoryLabel: 'Dicoding',
-        image: './assets/certificates/dicoding-solid.png',
+        image: './assets/certificates/belajarprinsip pemrogramansolid.png',
         fallback: './assets/certificates/dicoding.svg',
         credentialUrl: 'https://www.dicoding.com/certificates/4EXG3YKRDZRL'
     },
     {
         id: 'dicoding-java',
         title: 'Memulai Pemrograman Dengan Java',
-        description: 'Sertifikasi Dicoding Indonesia yang mempelajari sintaks Java murni, manipulasi array dan string, struktur kontrol, serta pengantar OOP (ID: JMZVVM3N3ZN9).',
+        description: '',
         category: 'dicoding',
         categoryLabel: 'Dicoding',
-        image: './assets/certificates/dicoding-java.png',
+        image: './assets/certificates/memulaipemrogramandenganjava.png',
         fallback: './assets/certificates/dicoding.svg',
         credentialUrl: 'https://www.dicoding.com/certificates/JMZVVM3N3ZN9'
     },
     {
         id: 'dicoding-manajemen-proyek',
         title: 'Belajar Dasar Manajemen Proyek',
-        description: 'Sertifikasi Dicoding Indonesia mengenai framework Agile, Scrum, estimasi durasi, alokasi sumber daya, dan monitoring milestone proyek (ID: 2VX35NO83PYQ).',
+        description: '',
         category: 'dicoding',
         categoryLabel: 'Dicoding',
-        image: './assets/certificates/dicoding-manajemen-proyek.png',
+        image: './assets/certificates/belajardasarmanajemenproyel.png',
         fallback: './assets/certificates/dicoding.svg',
         credentialUrl: 'https://www.dicoding.com/certificates/2VX35NO83PYQ'
     },
@@ -740,40 +752,40 @@ const certificates = [
     {
         id: 'hackerrank-software-engineer',
         title: 'Software Engineer Certificate',
-        description: 'Sertifikasi standar kompetensi HackerRank yang menguji pemecahan masalah algoritma, struktur data kompleks, SQL, dan rekayasa software (ID: 4504c743d3c8).',
+        description: '',
         category: 'hackerrank',
         categoryLabel: 'HackerRank',
-        image: './assets/certificates/hackerrank-software-engineer.png',
+        image: './assets/certificates/softwareengineerhackerrank.png',
         fallback: './assets/certificates/hackerrank.svg',
         credentialUrl: 'https://www.hackerrank.com/certificates/4504c743d3c8'
     },
     {
         id: 'hackerrank-software-engineer-intern',
         title: 'Software Engineer Intern Certificate',
-        description: 'Sertifikasi kesiapan magang industri oleh HackerRank yang menguji pemecahan masalah algoritma, integrasi REST API, dan standar clean coding (ID: CA3E5OD8CA69).',
+        description: '',
         category: 'hackerrank',
         categoryLabel: 'HackerRank',
-        image: './assets/certificates/hackerrank-software-engineer-intern.png',
+        image: './assets/certificates/softwareengineerinternhackerrank.png',
         fallback: './assets/certificates/hackerrank.svg',
         credentialUrl: 'https://www.hackerrank.com/certificates/iframe/ca3e50d8ca69'
     },
     {
         id: 'hackerrank-go-intermediate',
         title: 'Go (Intermediate) Certificate',
-        description: 'Sertifikasi HackerRank yang memvalidasi keahlian tingkat menengah pada bahasa Go meliputi goroutines, concurrency channels, dan struktur data (ID: 63a4f62a6564).',
+        description: '',
         category: 'hackerrank',
         categoryLabel: 'HackerRank',
-        image: './assets/certificates/hackerrank-go-intermediate.png',
+        image: './assets/certificates/gointermediatehackerrank.png',
         fallback: './assets/certificates/hackerrank.svg',
         credentialUrl: 'https://www.hackerrank.com/certificates/63a4f62a6564'
     },
     {
         id: 'hackerrank-go-basic',
         title: 'Go (Basic) Certificate',
-        description: 'Sertifikasi HackerRank yang memvalidasi pemahaman dasar bahasa Go, kontrol alur pemrograman, slice, maps, fungsi, dan sintaks inti (ID: 15819BDCD217).',
+        description: '',
         category: 'hackerrank',
         categoryLabel: 'HackerRank',
-        image: './assets/certificates/hackerrank-go-basic.png',
+        image: './assets/certificates/go(basic)hackerrank.png',
         fallback: './assets/certificates/hackerrank.svg',
         credentialUrl: 'https://www.hackerrank.com/certificates/iframe/15819bdcd217'
     },
@@ -782,10 +794,10 @@ const certificates = [
     {
         id: 'cisco-ethical-hacker',
         title: 'Certificate Ethical Hacker',
-        description: 'Sertifikasi keamanan siber dari Cisco Networking Academy yang mencakup teknik penetration testing, vulnerability assessment, dan mitigasi ancaman digital.',
+        description: '',
         category: 'cisco',
         categoryLabel: 'Cisco',
-        image: './assets/certificates/cisco-ethical-hacker.png',
+        image: './assets/certificates/certificateethicalhacker.png',
         fallback: './assets/certificates/cisco.svg',
         credentialUrl: 'https://drive.google.com/file/d/1hhcSS_FMzrruraELSHVYaUuj3f9lBRUF/view?usp=drivesdk'
     },
@@ -804,10 +816,10 @@ const certificates = [
     {
         id: 'bnsp-digital-marketing-ai',
         title: 'BNSP — Digital Marketing Berbasis AI',
-        description: 'Sertifikasi BNSP oleh Asosiasi Digital Marketing Indonesia (DIGIMIND) dengan kompetensi Digital Marketing dan Prompt Engineering (ID Kredensial: 3662).',
+        description: '',
         category: 'bnsp',
         categoryLabel: 'BNSP / DIGIMIND',
-        image: './assets/certificates/bnsp-digital-marketing-ai.png',
+        image: './assets/certificates/digitalmarketingberbasisAI.png',
         fallback: './assets/certificates/bnsp.svg',
         credentialUrl: 'https://www.linkedin.com/in/hanif-dinata-536371326/overlay/Certifications/295248970/treasury/?profileId=ACoAAFJHhLoBK32Wr2MSeoN6FuZxrgFilXXK9To'
     },
@@ -816,10 +828,10 @@ const certificates = [
     {
         id: 'inatechno-pengembangan-diri',
         title: 'Workshop Pengembangan Diri',
-        description: 'Sertifikat partisipasi workshop intensif INATECHNO dengan fokus peningkatan soft skills, personal branding, kepemimpinan tim, dan karir IT (ID: 05250303002).',
+        description: '',
         category: 'inatechno',
         categoryLabel: 'INATECHNO',
-        image: './assets/certificates/inatechno-pengembangan-diri.png',
+        image: './assets/certificates/workshoppengenmabangandiri.png',
         fallback: './assets/certificates/inatechno.svg',
         credentialUrl: 'https://drive.google.com/file/d/1_V-e5xD6zwWbIxV1NzDdDhOd_XC24Rao/view?usp=drive_link'
     },
@@ -828,10 +840,10 @@ const certificates = [
     {
         id: 'dts-kominfo-pelatihan',
         title: 'Sertifikat Pelatihan Digital Talent Scholarship',
-        description: 'Sertifikat resmi program DTS oleh Kementerian Komunikasi dan Informatika (Kominfo) dalam pengembangan talenta teknologi informasi nasional.',
+        description: '',
         category: 'kominfo',
         categoryLabel: 'Kominfo DTS',
-        image: './assets/certificates/dts-kominfo-pelatihan.png',
+        image: './assets/certificates/talendsholarship.png',
         fallback: './assets/certificates/kominfo.svg',
         credentialUrl: 'https://drive.google.com/file/d/1BYVF_ow0GjXTLXCa4YsBEPVwntZ__XMK/view?usp=drivesdk'
     },
@@ -840,10 +852,10 @@ const certificates = [
     {
         id: 'job-fair-pnp-2024',
         title: 'Piagam Penghargaan — Job Fair & Seminar Karir 2024',
-        description: 'Piagam penghargaan UPAPKK Politeknik Negeri Padang atas peran aktif sebagai panitia Dokumentasi dan Video Editor pada Job Fair 2024 (ID: 483/PL9.PP.01.07/2024).',
+        description: '',
         category: 'organization',
         categoryLabel: 'Job Fair PNP',
-        image: './assets/certificates/job-fair-pnp-2024.png',
+        image: './assets/certificates/panitiajobkarirdanseminarkarir.png',
         fallback: './assets/certificates/organization.svg',
         credentialUrl: 'https://drive.google.com/file/d/10Su0WZftwNFSH47X3_W-TMG5ON1qgG_G/view?usp=drivesdk'
     },
@@ -867,55 +879,15 @@ const certificates = [
         fallback: './assets/certificates/5.png',
         credentialUrl: 'https://drive.google.com/file/d/1fHZdjmOhNH-uj7xB6RH6J5J3szlLqYFW/view?usp=drivesdk'
     },
-    {
-        id: 'cert-org-hmj',
-        title: 'Sertifikat Kepengurusan — HMJ TI PNP',
-        description: 'Sertifikat dedikasi kepengurusan pada Divisi Komunikasi dan Informasi Himpunan Mahasiswa TI PNP periode 2024–2026 dalam perancangan konten visual.',
-        category: 'organization',
-        categoryLabel: 'HMJ TI PNP',
-        image: './assets/certificates/sertifikat-hmj-ti.png',
-        fallback: './assets/certificates/organization.svg',
-        credentialUrl: ''
-    },
-    {
-        id: 'cert-workshop-pkkmb',
-        title: 'Sertifikat Kontributor — PKKMB TI 2024',
-        description: 'Penghargaan atas kontribusi kreatif dalam pembuatan twibbon resmi dan video sambutan mahasiswa baru Jurusan Teknologi Informasi Politeknik Negeri Padang.',
-        category: 'organization',
-        categoryLabel: 'HMJ TI PNP',
-        image: './assets/certificates/sertifikat-pkkmb-ti.png',
-        fallback: './assets/certificates/organization.svg',
-        credentialUrl: ''
-    },
-    {
-        id: 'pnp-d3-teknik-komputer',
-        title: 'Lulusan dengan Pujian — D3 Teknik Komputer',
-        description: 'Ijazah kelulusan Politeknik Negeri Padang dengan predikat Lulusan dengan Pujian (IPK 3,58) dengan konsentrasi rekayasa sistem komputer.',
-        category: 'organization',
-        categoryLabel: 'Politeknik Negeri Padang',
-        image: './assets/certificates/sertifikat-kelulusan-pnp.png',
-        fallback: './assets/certificates/organization.svg',
-        credentialUrl: ''
-    },
 
     /* --- Internship --- */
     {
-        id: 'cert-intern-qa',
-        title: 'Sertifikat Magang — Quality Assurance Tester',
-        description: 'Sertifikat penyelesaian program magang di PT Neuronworks Indonesia dengan fokus pengujian fungsional manual dan otomatisasi menggunakan Cypress.',
-        category: 'internship',
-        categoryLabel: 'Internship',
-        image: './assets/certificates/sertifikat-magang-qa.png',
-        fallback: './assets/certificates/internship.svg',
-        credentialUrl: ''
-    },
-    {
         id: 'cert-intern-backend',
         title: 'Sertifikat Magang — Backend Developer',
-        description: 'Sertifikat magang di IMEJ Consultant dalam pengembangan RESTful API, perancangan basis data relasional, debugging kode, serta optimasi backend Laravel.',
+        description: '',
         category: 'internship',
         categoryLabel: 'Internship',
-        image: './assets/certificates/sertifikat-magang-backend.png',
+        image: './assets/certificates/sertifikatmagangbackenddeveloper.png',
         fallback: './assets/certificates/internship.svg',
         credentialUrl: ''
     }
@@ -957,7 +929,9 @@ function renderCertificates(activeFilter) {
         html += '  </div>';
         html += '  <div class="cert-body">';
         html += '    <h3 class="cert-name">' + cert.title + '</h3>';
-        html += '    <p class="cert-desc">' + cert.description + '</p>';
+        if (cert.description && cert.description.trim() !== '') {
+            html += '    <p class="cert-desc">' + cert.description + '</p>';
+        }
         html += '    <button type="button" class="btn btn-primary btn-block cert-action-btn" data-cert-id="' + cert.id + '">';
         html += '      Lihat Sertifikat';
         html += '    </button>';
@@ -987,7 +961,13 @@ function openCertModal(certId) {
 
     if (certModalBadge) certModalBadge.textContent = cert.categoryLabel;
     if (certModalTitle) certModalTitle.textContent = cert.title;
-    if (certModalDesc) certModalDesc.textContent = cert.description;
+    if (certModalDesc) {
+        certModalDesc.textContent = cert.description || '';
+        const modalFooter = certModalDesc.closest('.cert-modal-footer');
+        if (modalFooter) {
+            modalFooter.style.display = (!cert.description || cert.description.trim() === '') ? 'none' : 'block';
+        }
+    }
 
     if (certModalImg) {
         var webpSrc = cert.image.replace('.png', '.webp');
@@ -1055,54 +1035,8 @@ if (certModalOverlay) {
     });
 }
 
-/* --- Development Notice Alert Modal --- */
-const devAlertOverlay = document.getElementById('dev-alert-overlay');
-const devAlertCloseBtn = document.getElementById('dev-alert-close-btn');
-const devAlertConfirmBtn = document.getElementById('dev-alert-confirm-btn');
-
-function openDevAlert() {
-    if (devAlertOverlay) {
-        devAlertOverlay.classList.add('open');
-        document.body.classList.add('modal-open');
-    }
-}
-
-function closeDevAlert() {
-    if (devAlertOverlay) {
-        devAlertOverlay.classList.remove('open');
-        const anyOtherModalOpen = document.querySelector('.modal-overlay.open:not(#dev-alert-overlay)');
-        if (!anyOtherModalOpen) {
-            document.body.classList.remove('modal-open');
-        }
-    }
-}
-
-if (devAlertCloseBtn) {
-    devAlertCloseBtn.addEventListener('click', closeDevAlert);
-}
-
-if (devAlertConfirmBtn) {
-    devAlertConfirmBtn.addEventListener('click', closeDevAlert);
-}
-
-if (devAlertOverlay) {
-    devAlertOverlay.addEventListener('click', function (e) {
-        if (e.target === devAlertOverlay) {
-            closeDevAlert();
-        }
-    });
-}
-
-// Muncul otomatis setiap kali web dibuka atau direfresh
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', openDevAlert);
-} else {
-    openDevAlert();
-}
-
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
-        closeDevAlert();
         closeCertModal();
         if (typeof closeCvModal === 'function') closeCvModal();
         if (typeof closeModal === 'function') closeModal();
