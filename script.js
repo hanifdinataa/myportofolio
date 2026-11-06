@@ -423,7 +423,11 @@ function openLightbox(index) {
     if (!lightboxOverlay || !lightboxImg || !currentLightboxImages.length) return;
     currentLightboxIndex = index;
     lightboxImg.src = currentLightboxImages[index];
-    lightboxImg.alt = 'Foto Proyek ' + (index + 1);
+    if (typeof trainingDocImages !== 'undefined' && currentLightboxImages === trainingDocImages) {
+        lightboxImg.alt = trainingDocCaptions[index] || 'Dokumentasi Canva Bootcamp';
+    } else {
+        lightboxImg.alt = 'Foto Proyek ' + (index + 1);
+    }
     lightboxOverlay.classList.add('open');
 
     updateLightboxNav();
@@ -477,6 +481,34 @@ if (lightboxNext) {
         }
     });
 }
+
+/* --- Training Documentation Lightbox Logic --- */
+const trainingDocImages = [
+    './assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135651.png',
+    './assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135859.png',
+    './assets/Canva%20Bootcamp/Screenshot%202026-11-06%20140702.png'
+];
+
+const trainingDocCaptions = [
+    'Poster Resmi & Forum Kelas — Belajar Canva Online Bootcamp Batch 3',
+    'Sesi Pembelajaran Video: Data, Chart & Table di Canva',
+    'Silabus & Modul Pembelajaran Materi 1 s.d. 8 di Kelas Daring'
+];
+
+document.querySelectorAll('.training-doc-item').forEach(function (item) {
+    function handleDocClick() {
+        const index = parseInt(item.getAttribute('data-doc-index'), 10) || 0;
+        currentLightboxImages = trainingDocImages;
+        openLightbox(index);
+    }
+    item.addEventListener('click', handleDocClick);
+    item.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            handleDocClick();
+        }
+    });
+});
 
 /* --- Card Click Delegation --- */
 if (portfolioGrid) {
