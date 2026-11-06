@@ -13,7 +13,7 @@ const projects = [
         shortHeading: 'Sistem Monitoring Kesehatan & Nutrisi Anak',
         description: 'Sistem Smart Snack Box berbasis Internet of Things untuk membantu monitoring kesehatan anak serta memberikan informasi terkait konsumsi makanan.',
         tech: ['ESP32', 'MQTT', 'Laravel', 'MySQL', 'Flutter', 'AWS', 'Docker', 'XGBoost', 'TensorFlow Lite'],
-        cover: './assets/projects/smart-snack-box/snack1.png',
+        cover: './assets/projects/smart-snack-box/snack1.webp',
         images: [
             './assets/projects/smart-snack-box/snack1.png',
             './assets/projects/smart-snack-box/2.png',
@@ -49,7 +49,7 @@ const projects = [
         shortHeading: 'Keamanan Akses Pintu Cerdas',
         description: 'Sistem kunci pintu otomatis menggunakan RFID untuk melakukan autentikasi dan mengontrol akses pintu.',
         tech: ['Arduino Uno', 'RFID', 'Embedded System'],
-        cover: './assets/projects/rfid-door-lock/rf.png',
+        cover: './assets/projects/rfid-door-lock/rf.webp',
         images: [
             './assets/projects/rfid-door-lock/rf.png',
             './assets/projects/rfid-door-lock/image-1.jpg',
@@ -311,7 +311,7 @@ function renderProjects() {
     projects.forEach(function (project) {
         html += '<article class="project-card">';
         html += '  <div class="card-image">';
-        html += '    <img src="' + project.cover + '" alt="' + project.title + '" loading="lazy" width="400" height="250" onerror="this.parentElement.classList.add(\'img-error\')">';
+        html += '    <img src="' + project.cover + '" alt="' + project.title + '" loading="lazy" decoding="async" width="400" height="250" onerror="this.parentElement.classList.add(\'img-error\')">';
         html += '  </div>';
         html += '  <div class="card-body">';
         html += '    <h3 class="card-title">' + project.title + '</h3>';
@@ -484,9 +484,9 @@ if (lightboxNext) {
 
 /* --- Training Documentation Lightbox Logic --- */
 const trainingDocImages = [
-    './assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135651.png',
-    './assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135859.png',
-    './assets/Canva%20Bootcamp/Screenshot%202026-11-06%20140702.png'
+    './assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135651.webp',
+    './assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135859.webp',
+    './assets/Canva%20Bootcamp/Screenshot%202026-11-06%20140702.webp'
 ];
 
 const trainingDocCaptions = [
@@ -558,6 +558,10 @@ const cvModalClose = document.getElementById('cv-modal-close');
 
 function openCvModal() {
     if (cvModalOverlay) {
+        const cvIframe = document.getElementById('cv-iframe');
+        if (cvIframe && !cvIframe.getAttribute('src')) {
+            cvIframe.setAttribute('src', cvIframe.getAttribute('data-src') || './assets/CV/CV Hanif Dinata (1).pdf#toolbar=1');
+        }
         cvModalOverlay.classList.add('open');
         document.body.classList.add('modal-open');
         if (btnPreviewCv) btnPreviewCv.setAttribute('aria-expanded', 'true');
@@ -955,7 +959,7 @@ function renderCertificates(activeFilter) {
         html += '  <div class="cert-image-wrap" data-cert-id="' + cert.id + '" title="Klik untuk melihat pratinjau sertifikat">';
         html += '    <picture>';
         html += '      <source srcset="' + cert.image.replace('.png', '.webp') + '" type="image/webp">';
-        html += '      <img src="' + cert.image + '" alt="' + cert.title + '" loading="lazy" class="cert-preview-img" onerror="this.onerror=null;this.src=\'' + cert.fallback + '\'">';
+        html += '      <img src="' + cert.image + '" alt="' + cert.title + '" loading="lazy" decoding="async" class="cert-preview-img" onerror="this.onerror=null;this.src=\'' + cert.fallback + '\'">';
         html += '    </picture>';
         html += '    <span class="cert-badge">' + cert.categoryLabel + '</span>';
         html += '  </div>';

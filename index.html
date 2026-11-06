@@ -8,10 +8,10 @@
     <meta property="og:title" content="Portofolio - Hanif Dinata">
     <meta property="og:description" content="Portofolio Hanif Dinata, A.Md.T - Software Developer & Lulusan D3 Teknik Komputer.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./assets/images/Beige Design Studio Instagram Post.png">
+    <meta property="og:image" content="./assets/images/profile-hanif.webp">
     <title>Portofolio - Hanif Dinata</title>
-    <link rel="icon" type="image/png" href="./assets/images/Beige Design Studio Instagram Post.png">
-    <link rel="apple-touch-icon" href="./assets/images/Beige Design Studio Instagram Post.png">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -116,7 +116,10 @@
                 </div>
                 <div class="about-content">
                     <div class="about-image">
-                        <img src="./assets/images/Beige Design Studio Instagram Post.png" alt="Foto Hanif Dinata" width="280" height="280" onerror="this.parentElement.classList.add('img-error')">
+                        <picture>
+                            <source srcset="./assets/images/profile-hanif.webp" type="image/webp">
+                            <img src="./assets/images/profile-hanif.webp" alt="Foto Hanif Dinata" width="280" height="280" decoding="async" fetchpriority="high" onerror="this.parentElement.classList.add('img-error')">
+                        </picture>
                     </div>
                     <div class="about-text">
                         <p class="about-highlight">Lulusan D3 Teknik Komputer, Jurusan Teknologi Informasi, Politeknik Negeri Padang dengan <strong>IPK 3,58</strong> dan predikat <strong>Lulusan dengan Pujian</strong>.</p>
@@ -460,7 +463,10 @@
                                 <div class="training-doc-gallery clean">
                                     <div class="training-doc-item" data-doc-index="0" role="button" tabindex="0" title="Poster Resmi &amp; Forum Kelas">
                                         <div class="training-doc-img-wrap">
-                                            <img src="./assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135651.png" alt="Poster Resmi dan Forum Kelas Belajar Canva Online Bootcamp" loading="lazy">
+                                            <picture>
+                                                <source srcset="./assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135651.webp" type="image/webp">
+                                                <img src="./assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135651.png" alt="Poster Resmi dan Forum Kelas Belajar Canva Online Bootcamp" loading="lazy" decoding="async">
+                                            </picture>
                                             <div class="training-doc-overlay">
                                                 <span class="doc-zoom-btn">
                                                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -477,7 +483,10 @@
 
                                     <div class="training-doc-item" data-doc-index="1" role="button" tabindex="0" title="Sesi Praktik Video Canva">
                                         <div class="training-doc-img-wrap">
-                                            <img src="./assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135859.png" alt="Sesi Video Praktik Desain Canva" loading="lazy">
+                                            <picture>
+                                                <source srcset="./assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135859.webp" type="image/webp">
+                                                <img src="./assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135859.png" alt="Sesi Video Praktik Desain Canva" loading="lazy" decoding="async">
+                                            </picture>
                                             <div class="training-doc-overlay">
                                                 <span class="doc-zoom-btn">
                                                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -494,7 +503,10 @@
 
                                     <div class="training-doc-item" data-doc-index="2" role="button" tabindex="0" title="Silabus Modul Kelas">
                                         <div class="training-doc-img-wrap">
-                                            <img src="./assets/Canva%20Bootcamp/Screenshot%202026-11-06%20140702.png" alt="Silabus Modul Canva Bootcamp" loading="lazy">
+                                            <picture>
+                                                <source srcset="./assets/Canva%20Bootcamp/Screenshot%202026-11-06%20140702.webp" type="image/webp">
+                                                <img src="./assets/Canva%20Bootcamp/Screenshot%202026-11-06%20140702.png" alt="Silabus Modul Canva Bootcamp" loading="lazy" decoding="async">
+                                            </picture>
                                             <div class="training-doc-overlay">
                                                 <span class="doc-zoom-btn">
                                                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -776,7 +788,7 @@
                 </div>
             </div>
             <div class="cv-modal-body">
-                <iframe src="./assets/CV/CV Hanif Dinata (1).pdf#toolbar=1" class="cv-iframe" id="cv-iframe" title="Preview Curriculum Vitae Hanif Dinata"></iframe>
+                <iframe data-src="./assets/CV/CV Hanif Dinata (1).pdf#toolbar=1" class="cv-iframe" id="cv-iframe" title="Preview Curriculum Vitae Hanif Dinata" loading="lazy"></iframe>
                 <div class="cv-mobile-fallback">
                     <p>Preview PDF tidak tampil di perangkat Anda? Anda dapat membuka atau mengunduh langsung:</p>
                     <div class="cv-fallback-btns">
