@@ -486,13 +486,17 @@ if (lightboxNext) {
 const trainingDocImages = [
     './assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135651.webp',
     './assets/Canva%20Bootcamp/Screenshot%202026-11-06%20135859.webp',
-    './assets/Canva%20Bootcamp/Screenshot%202026-11-06%20140702.webp'
+    './assets/Canva%20Bootcamp/Screenshot%202026-11-06%20140702.webp',
+    './assets/certificates/CERTIFICATE-1.webp',
+    './assets/certificates/CERTIFICATE-2.webp'
 ];
 
 const trainingDocCaptions = [
     'Poster Resmi & Forum Kelas — Belajar Canva Online Bootcamp Batch 3',
     'Sesi Pembelajaran Video: Data, Chart & Table di Canva',
-    'Silabus & Modul Pembelajaran Materi 1 s.d. 8 di Kelas Daring'
+    'Silabus & Modul Pembelajaran Materi 1 s.d. 8 di Kelas Daring',
+    'Sertifikat Kelulusan Resmi Canva Camp — Graphic Design (Total Nilai: 96/100)',
+    'Sertifikat Transkrip & Jam Pelatihan Graphic Design with Canva (8 Modul Materi)'
 ];
 
 document.querySelectorAll('.training-doc-item').forEach(function (item) {
@@ -560,7 +564,7 @@ function openCvModal() {
     if (cvModalOverlay) {
         const cvIframe = document.getElementById('cv-iframe');
         if (cvIframe && !cvIframe.getAttribute('src')) {
-            cvIframe.setAttribute('src', cvIframe.getAttribute('data-src') || './assets/CV/CV Hanif Dinata (1).pdf#toolbar=1');
+            cvIframe.setAttribute('src', cvIframe.getAttribute('data-src') || './assets/CV/CV Hanif Dinata.pdf#toolbar=1');
         }
         cvModalOverlay.classList.add('open');
         document.body.classList.add('modal-open');
@@ -604,6 +608,28 @@ if (sidebarYear) sidebarYear.textContent = currentYear;
    CREDENTIALS / SERTIFIKAT DATA & LOGIC
    ============================================ */
 const certificates = [
+    /* --- Canva Bootcamp --- */
+    {
+        id: 'canva-camp-batch-7-graphic-design',
+        title: 'Graphic Design — Canva Camp Batch 7',
+        description: 'Sertifikat resmi kelulusan program Graphic Design Training Class oleh Canva Camp dan Qusean Indonesia (PT Tumbuh Global Indonesia) dengan predikat kelulusan Very Good (skor total: 96/100).',
+        category: 'canva',
+        categoryLabel: 'Canva Bootcamp',
+        image: './assets/certificates/CERTIFICATE-1.png',
+        fallback: './assets/certificates/canva.svg',
+        credentialUrl: ''
+    },
+    {
+        id: 'canva-bootcamp-training-curriculum',
+        title: 'Graphic Design with Canva — Kurikulum & Jam Pelatihan',
+        description: 'Transkrip dan sertifikat pencapaian materi 8 modul (Canva Basics, Design Principles, Photo Editing, Typography, Charts & Data) Canva Bootcamp oleh PT Tumbuh Global Indonesia.',
+        category: 'canva',
+        categoryLabel: 'Canva Bootcamp',
+        image: './assets/certificates/CERTIFICATE-2.png',
+        fallback: './assets/certificates/canva.svg',
+        credentialUrl: ''
+    },
+
     /* --- Oracle Academy --- */
     {
         id: 'oracle-java-programming-final',
@@ -930,7 +956,7 @@ const certificates = [
 ];
 
 const certGrid = document.getElementById('cert-grid');
-const certFilterBtns = document.querySelectorAll('.cert-filter-btn');
+const certFilterBtns = document.querySelectorAll('.certs-section-block .cert-filter-btn');
 const certModalOverlay = document.getElementById('cert-modal-overlay');
 const certModalBadge = document.getElementById('cert-modal-badge');
 const certModalTitle = document.getElementById('cert-modal-title');
